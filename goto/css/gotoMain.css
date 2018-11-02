@@ -1,0 +1,61 @@
+@charset "utf-8";
+table{
+    z-index: 2;
+    font-size: 0.7em;
+    max-width: 100%;
+    height: auto;
+    margin: 0% auto;
+    position: relative;
+    top: -200px;
+    left: 20px;
+    color: white;
+}
+.num{
+    color: azure;
+}
+.content{
+    color: white;
+}
+body{
+    background-color: black;
+    width: 100%;
+    font-size: 1.5em;
+}
+#back_img{
+    max-width: 100%;
+    z-index: 1;
+}
+div{
+    text-align: center
+}
+@media only screen and (min-width: 481px){
+    table{
+        z-index: 2;
+        font-size: 1.5em;
+        max-width: 100%;
+        height: auto;
+        margin: 0% auto;
+        position: relative;
+        top: -350px;
+        left: 20px;
+        color: rgb(253, 252, 252);
+    }
+    .num{
+        color: azure;
+    }
+    .content{
+        color: white;
+    }
+    body{
+        background-color: black;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #back_img{
+        max-width: 100%;
+        z-index: 1;
+    }
+    div{
+        text-align: center
+    }
+}
