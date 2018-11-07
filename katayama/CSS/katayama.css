@@ -53,6 +53,17 @@ article > section{
     border-bottom: 1px solid #ccc;
 }
 
+article{
+    text-align: center;
+    line-height: 4em;
+}
+article a{
+    font-size: 3em;
+}
+.tork{
+    text-align: center;
+}
+
 @media only screen and (min-width: 481px) {
     nav {
         padding: 0 0 0 7%;
