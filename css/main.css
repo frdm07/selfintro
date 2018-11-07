@@ -1,1 +1,12 @@
-@
+@charset "utf-8";
+body{
+    width: 100%;
+    background-color: azure;
+}
+.topImg{
+    max-width: 100%;
+    height: auto;
+}
+div{
+    text-align: center;
+}
