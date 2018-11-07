@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* clearfix */
+.cf { zoom: 1; }
+.cf:before, .cf:after {
+    content: ""; display: table;
+}
+.cf:after { clear: both; }
+body {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+header {
+    text-align: center;
+    background: repeating-linear-gradient(-45deg,
+    #e60033 , #e60033 1.5em,
+    #fff 1.5em, #fff 3.0em, #f08300 3.0em, #f08300 4.5em,
+    #fff 4.5em, #fff 6.0em, #ffd900 6.0em, #ffd900 7.5em,
+    #fff 7.5em, #fff 9.0em, #3eb370 9.0em, #3eb370 10.5em,
+    #fff 10.5em, #fff 12.0em, #bce2e8 12.0em, #bce2e8 12.5em,
+    #fff 13.5em, #fff 15.0em, #0095d9 15.0em, #0095d9 15.5em,
+    #fff 16.5em, #fff 18.0em, #884898 18.0em, #884898 18.5em,
+    #fff 19.5em, #fff 21.0em);
+}
+header h1 {
+    font-size: 2.3em;
+    padding: 0.4em 0 0.4em 0;
+    color: black;
+}
+nav {
+    background-color: #0AF;
+}
+nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 2.0em;
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+#contents {
+    width: 80%;
+    margin: 1em auto 1em;
+}
+section {
+    margin: 0 0 1em 0;
+}
+aside > section{
+    height:130px;
+    background-color: #00ccff;
+    padding: 15px 0 0 20px;
+}
+article > section{
+    border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (min-width: 481px) {
+    nav {
+        padding: 0 0 0 7%;
+        }
+    nav ul li {
+        float:left;
+        width: 100px;
+        margin: 0;
+        text-align: center;
+        line-height: 3.0em;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
+
+    #contents_menu1 {
+        width: 45%;
+        float: left;
+    }
+    #contents_menu2 {
+        width: 45%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    article.main {
+        width: 65%;
+        float: right;
+    }
+    aside.contents_menu {
+        width: 30%;
+        float: left;
+    }
+    aside.contents_menu ul li {
+        font-size: 1.1em;
+    }
+    #contents_menu1,
+    #contents_menu2 {
+        width: 95%;
+        float: none;
+    }
+}
